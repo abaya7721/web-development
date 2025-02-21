@@ -1,0 +1,14 @@
+blockquote {
+    background-color: khaki;
+    font-family: "Times New Roman";
+}
+
+blockquote:hover {
+    background-color: lavender;
+    cursor: pointer;
+}
+
+.important {
+    color:red;
+    font-size:3-px;
+}
