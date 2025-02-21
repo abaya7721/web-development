@@ -9,6 +9,26 @@ blockquote:hover {
 }
 
 .important {
-    color:red;
+    color:darkred;
     font-size:3-px;
 }
+
+.underlined {
+  text-decoration: underline;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    max-width: 960px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
