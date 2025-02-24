@@ -1,0 +1,38 @@
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+h2 {
+    color: darkred;
+
+}
+
+p, li {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.ingredients {
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.instructions {
+    margin-top: 100px;
+}
+
+#header {
+    background-color: orange;
+    padding: 15px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
