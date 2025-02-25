@@ -1,0 +1,72 @@
+html {
+    font-family: Arial, sans-serif;
+}
+
+.styled-text {
+    font-style: italic;
+       font-size: 18px;
+}
+.layout-text{
+    text-align: justify;
+    line-height: 1.5;
+}
+header h1 {
+    font-family: honk;
+}
+.highlight {
+    background-color: yellow;
+}
+.bonus {
+     word-spacing: 5px;
+     letter-spacing: 2px;
+     text-indent: 5em;
+}
+.bonus-indent {
+     word-spacing: 5px;
+     text-indent: 5em hanging;
+     zoom: 80%;
+}
+
+/*section {
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 18px;
+    text-transform: full-width;
+    text-decoration: underline;
+}*/
+
+/*Lists*/
+
+ul.styled-lists{
+    list-style-type: lower-alpha;
+    line-height:2;
+    list-style-position: outside;
+}
+ol.styled-lists {
+    list-style-type: lower-roman;
+    line-height:2;
+}
+
+/*Images and Links*/
+.custom-link{
+    color:green;
+    text-decoration:none;
+}
+.custom-link:active {
+    color:red;
+}
+.custom-link:hover {
+    text-decoration:underline;
+}
+
+image-frame {
+    width: 300px;
+    border: 3px solid blue;
+    padding: 5px;
+    background-color: black;
+}
+
+.image-frame img{
+    width:100%;
+}
