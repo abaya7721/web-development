@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 5px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    margin: 20px;
+    height: 100vh;
+    padding: 10px;
+    background: url('mountains.jpg');
+    background-size: 120%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo h1{
+    text-align: center;
+    display: flex;
+    font-size: 90px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+main {
+    margin: 20px;
+    background: linear-gradient(rgba(245, 239, 218, 0.3), rgba(219, 137, 48, 0.3))
+}
+
+.menu {
+    margin-left: 20px
+}
+
+section {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.hero p{
+   text-align: center;
+   padding: 2px;
+   letter-spacing: 1px;
+}
+.features p{
+    padding: 40px;
+    margin: 0px 40px;
+    background-color: #e4e4f4;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 5px;
+    background: rgba(225, 238, 245, 0.5);
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+    border-radius: 5px;
+    background: #00cc00;
+    padding: 10px;
+}
+
+.button{
+  margin-top: 20px;
+  padding: 10px 10px;
+  background: #00cc00;
+  color: white;
+  border-radius: 5px;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .hero{
+        flex: 1;
+    }
+}

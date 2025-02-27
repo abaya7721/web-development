@@ -60,6 +60,7 @@ a:hover {
 
 .image-frame img {
     width: 80%;
+    border-radius: 5px;
     margin-top: 10px;
     object-position: 50px;
     filter: drop-shadow(7px 4px 4px grey);
