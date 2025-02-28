@@ -1,79 +1,93 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Midnight Travel Site</title>
+    <title>Travel Site</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        .img {
-          border-radius: 5px;
-        }
         h1 {
-            font-size: 4em;
-        }
-        nav a:hover {
-            color: #388ca8;
+            font-size: 3em;
         }
         .large-text {
-            font-size: 50px;
+            padding-left: 20px;
+            font-size: 40px;
         }
         .content {
-          padding: 7px;
+          padding: 20px;
           text-align: justify;
           line-spacing: 1.5;
           letter-spacing: 1;
+        }
+
+       .menu-item {
+           color: #ff6347;
+       }
+
+        .menu-item:hover{
+            color: blue;
+        }
+
+        .roboto-slab-title {
+              font-family: "Roboto Slab", serif;
+              font-optical-sizing: auto;
+              font-weight: <weight>;
+              font-style: normal;
         }
     </style>
 </head>
 <body>
 
-
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Menu</a>
+            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" style="color: #ff6347;">Home</a>
+                        <a class="nav-link menu-item" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html" style="color: #ff6347;">About</a>
+                        <a class="nav-link menu-item" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html" style="color: #ff6347;">Contact</a>
+                        <a class="nav-link menu-item" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>Travel Mystery Blog</h1>
-    <p>Join me on an adventure across mysterious landscapes and strange auras!</p>
+
+
+    <div class="jumbotron text-center lead my-4 p-3" style="margin-bottom:0">
+        <h1 class="roboto-slab-title">Travel Mystery Blog</h1>
+        <p>Join me on an adventure across mysterious landscapes and strange auras!</p>
+        <button type="button" class="btn btn-info" data-mdb-ripple-init>Subscribe To newsletter</button>
     </div>
-    <div class="container-fluid text-light bg-dark p-4 mt-3 lead my-4">
+
+
+
+    <div class="container-fluid text-light bg-dark mt-3 lead my-4 p-3">
             <div class="row">
-                <p class="fs-1">Recent Areas</p>
                 <div class="col-md-6">
-                    <img src="bodieCA.jpg" class="img-fluid mb-4 img" alt="Abandoned town">
                     <p class="large-text">Bodie, CA</p>
+                    <img src="images/bodieCA.jpg" class="d-block mx-auto img-fluid mb-4 rounded" alt="Abandoned town">
                     <p class="content">Visiting the ghost town of Bodie, California was an amazing time. Exploring the abandoned crumbling structures
                     you could feel what was once a thriving town. This fascinating ghost town located in the Bodie Hills east of the Sierra Nevada mountain range in Mono County. It was founded in 1876 after the discovery of a profitable vein of gold, which transformed it into a bustling boomtown. By 1879, Bodie had a population of nearly 10,000 people and over 2,000 buildings.
                         During its heyday, Bodie was known for its lawlessness and vice, earning the reputation of being "the wildest town in the West." The town had numerous saloons, brothels, and gambling halls. It was also one of the first towns in California to have electricity.
                         However, Bodie's prosperity was short-lived. By the 1880s, the mines began to yield less gold, and the population started to decline. The town was nearly deserted by the 1940s, and the last mine closed in 1942.</p>
-                    <img src="bodieCA.jpg" class="img-fluid mb-4 img" alt="Image 1">
+                    <img src="images/bodieCA.jpg" class="d-block mx-auto img-fluid mb-4 img" alt="Image 1">
                 </div>
-                <div class="col-md-6 ">
-                    <img src="portlockAK.jpg" class="img-fluid mb-4 img" alt="Image 1">
+                <div class="col-md-6">
                     <p class="large-text">Portlock, AK</p>
+                    <img src="images/portlockAK.jpg" class="img-fluid d-block mx-auto mb-4 rounded" alt="Foggy mountains and river">
                     <p class="content">There is something strange going on in Portlock. Visiting in late fall there was an eerie silence throughout the decaying buildings. Some of the building are preserved for historical significance.
-                    The area has been home to the Alutiiq people for hundreds of years. The town itself, Portlock which was named after Captain Nathaniel Portlock, first formed when it was home to a cannery and then became focused on copper mining. Throughout the years there have been
-                        several disappearances of the residents and possible sightings of a large create in the dense forests surrounding the coastal town. Having been abandoned since the 1950s, the town is slowly being reclaimed by the land.</p>
+                    The area has been home to the Alutiiq people for hundreds of years. The town itself, Portlock which was named after Captain Nathaniel Portlock, first formed when it was home to a cannery and then became focused on copper mining. Throughout the years there have been several disappearances of the residents and possible sightings of a large create in the dense forests surrounding the coastal town. Having been abandoned since the 1950s, the town is slowly being reclaimed by the land.</p>
                 </div>
             </div>
         </div>
@@ -81,8 +95,10 @@
     <div class="container-fluid text-center bg-light p-4 mt-3">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32672.320641090468!2d-151.76510807540683!3d59.21568003074543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d368b5a5c05b3bf%3A0x5218afd77eefe663!2sPortlock%2C%20AK%2099603!5e0!3m2!1sen!2sus!4v1740679024365!5m2!1sen!2sus" width="600" height="450" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <p>Footer</p>
+    <div>
+        <footer class="bg-dark text-white p-1 mt-auto">
+            <p>Mystery Blog 2025 &copy;</p>
+        </footer>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 

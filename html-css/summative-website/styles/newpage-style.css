@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.img-size {
+    width: 40px;
+}
+
+.navbar-nav{
+    margin-right: 0 !important;
+    padding-right: 100px;
+}
+
+.navbar{
+    background-color: #0a193d;
+    color: white !important;
+}
+
+.nav-item a{
+    color: white !important;
+}
+
+.nav-item a:hover{
+    color: red !important;
+}
+
+.page-link a:hover{
+    color: orange !important;
+}
+
+.nav-item{
+    padding-left: 2px;
+}
+
+.navbar-brand{
+    color: white !important;
+    padding-left: 100px;
+}
+
+#navbar button{
+    color: white !important;
+}
+
+/* banner */
+#banner-container{
+    background-color: #0a193d;
+    color: white !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#banner-row img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    padding-left: 30px;
+}
+
+#banner-row h3, p{
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#banner-row a{
+    background-color: white !important;
+    color: black;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+#banner-col{
+    padding-left: 20px;
+}
+
+#service{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#service h1{
+    padding-bottom: 70px;
+}
+
+.large-text {
+    font-size: 25px;
+
+}
+
+.content {
+          padding: 50px;
+          text-align: justify;
+          line-spacing: 1.5;
+          letter-spacing: 1;
+          font-size: 20px;
+}
+
+.mb-3{
+  padding-top: 10px;
+}
+
+/*.carousel-item {
+   height: 70%; *//* Set width to 50px *//*
+   width: 100px;
+}*/
+
+.carousel-custom-size {
+  width: 700px;  /* Set desired medium width */
+  height: 500px; /* Set desired medium height */
+  object-fit: 50%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for captions */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-indicators button {
+  background-color: #fff; /* White indicator dots */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff; /* Highlight active dot */
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Make navigation arrows white */
+}
+
+.grayscale-effect {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.grayscale-effect:hover {
+  filter: grayscale(0%); /* Returns color on hover */
+}
+
+/* media */
+@media only screen and (max-width: 987px){
+    .navbar-brand{
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #banner-row img{
+        padding-top: 20px;
+    }
+
+   .social-col{
+       width: 33%;
+   }
+
+}
