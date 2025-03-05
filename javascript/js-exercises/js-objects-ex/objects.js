@@ -60,6 +60,7 @@ const job2 = {
      company: "Tech Corp",
 };
 const location2 = {
+     name: "Alison",
      city: "New York",
      country: "USA",
 };

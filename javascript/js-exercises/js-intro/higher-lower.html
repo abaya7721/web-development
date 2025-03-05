@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Guess Sandbox Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Rationale&family=Saira+Stencil+One&family=Sarpanch:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .triangle {
+            background-size: cover;
+            background-position: center;
+        }
+        .saira-stencil-bold {
+            font-family: "Saira Stencil One", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+        .saira-stencil-reg {
+            font-family: "Saira Stencil One", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .bungee-tint {
+            font-family: "Bungee Tint", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .sarpanch-bold {
+          font-family: "Sarpanch", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+        .sarpanch-regular {
+          font-family: "Sarpanch", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+        .rationale-regular {
+          font-family: "Rationale", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+
+
+    </style>
+</head>
+<body class=" d-flex align-items-center justify-content-center flex-column bg-dark" style="height: 100vh;">
+    <div class="container-fluid flex-column text-center p-5 bg-light rounded-pill" style="max-width: 70%">
+        <h1 class="sarpanch-bold">Higher - Lower</h1>
+        <p>Guess a number between 1 and 20.</p>
+        <div class="form-group">
+            <label for="guessTextArea"></label>
+            <textarea class="container form-control align-items-center" id="guessTextArea" rows="1" style="width: 70px;"></textarea>
+        </div>
+        <button id="guessBtn" class="btn btn-primary m-2">Guess</button>
+        <div class="saira-stencil-reg d-flex">
+            <div class="container-fluid text-left p-0">Further</div>
+            <div class="container-fluid text-right p-0">Closer</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="progressBar"></div>
+        </div>
+        <p class="saira-stencil-reg">Range Meter</p>
+    </div>
+    <div class="container-fluid text-center text-light" id="resultsArea">
+
+    </div>
+
+    <div class="triangle p-3" style="width: 50px; height: 50px; backgroundColor: ''; backgroundImage: 'none'" id="circleTop"></div>
+    <div class="triangle p-3" style="width: 50px; height: 50px; backgroundColor: ''; backgroundImage: 'none'" id="circleBottom"></div>
+
+<script src="higher-lower.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
