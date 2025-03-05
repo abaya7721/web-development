@@ -63,7 +63,7 @@ function updateProgressBar(value) {
 // Resets background to blank for the div containing the triangle images
 function resetBackground() {
     document.getElementById('circleTop').style.backgroundImage = 'none';
-    document.getElementById('circleTop').style.backgroundImage = 'none';
+    document.getElementById('circleBottom').style.backgroundImage = 'none';
 }
 
 // Conditional checks the guess value against the random value
@@ -80,6 +80,9 @@ function evaluateGuess(guessValue, randomNumber1N20) {
         document.querySelector('#resultsArea').textContent = "You got it!";
          document.querySelector('#resultsArea').classList.add("bungee-tint");
         document.body.style.background = '#a3eba2';
+
+        // generate random number 1 - 20
+        let randomNumber1N20 = Math.floor(Math.random() * 20) + 1;
     }
     else if(intGuessValue < randomNumber1N20) {
         document.querySelector('#resultsArea').textContent = "The number is higher!";
