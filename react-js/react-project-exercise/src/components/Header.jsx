@@ -5,8 +5,8 @@ export default function Header() {
 
     return (
             <div>
-            <header className = "page-header">
-                <h1> Favorite Movies </h1>
+            <header className = "page-header-box">
+                <h1 className = "header">My Top  5 Favorite Movies</h1>
                 <p></p>
             </header>
             </div>

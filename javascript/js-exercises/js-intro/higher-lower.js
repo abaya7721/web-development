@@ -78,7 +78,7 @@ function evaluateGuess(guessValue, randomNumber1N20) {
     if (intGuessValue === randomNumber1N20) {
         document.querySelector('#resultsArea').style.fontSize = "50px";
         document.querySelector('#resultsArea').textContent = "You got it!";
-         document.querySelector('#resultsArea').classList.add("bungee-tint");
+        document.querySelector('#resultsArea').classList.add("bungee-tint");
         document.body.style.background = '#a3eba2';
 
         // generate random number 1 - 20
@@ -87,12 +87,12 @@ function evaluateGuess(guessValue, randomNumber1N20) {
     else if(intGuessValue < randomNumber1N20) {
         document.querySelector('#resultsArea').textContent = "The number is higher!";
         document.getElementById('circleTop').style.backgroundImage = `url('${"red-triangle.png"}')`;
-        timeOut = setTimeout(resetBackground, 3000);
+        setTimeout(resetBackground, 3000);
     }
     else {
         document.querySelector('#resultsArea').textContent ="The number is lower!";
         document.getElementById('circleTop').style.backgroundImage = `url('${"blue-triangle.png"}')`;
-        timeOut = setTimeout(resetBackground, 3000);
+        setTimeout(resetBackground, 3000);
     }
     updateProgressBar(calculateDecimal(guessValue, randomNumber1N20));
 }
@@ -108,7 +108,7 @@ guessBtn.addEventListener('click', function() {
     if (guessValue > 20) {
         alert('Out of bounds.');
     }
-    else if(guessValue != NaN && guessValue > 0) {
+    else if(!isNaN(guessValue) && guessValue > 0) {
         evaluateGuess(guessValue, randomNumber1N20);
     }
     else {
