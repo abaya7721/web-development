@@ -1,0 +1,195 @@
+/* Base styles */
+:root {
+    --primary-color: #2196f3;
+    --primary-hover: #1976d2;
+    --danger-color: #f44336;
+    --danger-hover: #d32f2f;
+    --text-color: #333;
+    --text-secondary: #666;
+    --text-light: #999;
+    --background-color: #f9f9f9;
+    --card-background: #ffffff;
+    --border-color: #e0e0e0;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --transition: all 0.2s ease-in-out;
+    --border-radius: 4px;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+
+.card {
+    padding: var(--spacing-xl);
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--spacing-lg);
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-container {
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.movie-item {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    background-color: var(--card-background);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--spacing-md);
+    transition: var(--transition);
+}
+
+.movie-item-single{
+    display: block;
+}
+
+.movie-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+    margin-bottom: var(--spacing-md);
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+label {
+    display: block;
+    padding: var(--spacing-md);
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-align: left;
+}
+
+
+button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.button-color {
+    background-color: var(--primary-color) !important;
+    color: white;
+    margin: var(--spacing-md);
+}
+
+.button-color:hover {
+    background-color: var(--primary-hover) !important;
+    transform: translateY(-1px);
+}
+
+.button-color-delete {
+    background-color: var(--danger-color);
+    color: white;
+    margin: var(--spacing-md);
+}
+
+.button-color-delete:hover {
+    background-color: var(--danger-hover);
+    transform: translateY(-1px);
+}
+
+button:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.creation-date {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    text-align: right;
+    padding-left: var(--spacing-md);
+}
+
+.read-the-docs {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-top: var(--spacing-xl);
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    #root {
+        padding: var(--spacing-md);
+    }
+
+    .card {
+        padding: var(--spacing-lg);
+    }
+}
+
